@@ -10,7 +10,8 @@
         </li>
     }
 </ul>
-
+<input placeholder="Algo que hacer" @bind="newTarea"/>
+<button class="button" @onclick="AddTodo">Agregar Algo</button>
 @code {
     private List<TareaItem> tareas = new();
     private string? newTarea;
